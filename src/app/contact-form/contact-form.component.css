@@ -1,0 +1,22 @@
+.form-group {
+    padding: 0px 0px 20px;
+}
+
+.wrapper-box {
+    padding: 70px 0px;
+    background: #f6f6f6;
+}
+
+form.ng-untouched.ng-pristine.ng-invalid {
+    border: 2px solid #d1c9c9;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+form.ng-pristine.ng-invalid.ng-touched {
+    border: 2px solid #d1c9c9;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+}

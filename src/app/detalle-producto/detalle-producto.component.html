@@ -1,0 +1,194 @@
+<div class="detalle">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <!--img
+          class="img-principal"
+          src="../../assets/img/mujer/detalle-de-producto/chaqueta1.jpg"
+        /-->
+
+        <div
+          class="text-info contenido"
+          [ngClass]="{ 'd-block': activo == 'galeria1' }"
+        >
+          <img
+            class="img-principal"
+            src="../../assets/img/mujer/detalle-de-producto/chaqueta1.jpg"
+          />
+        </div>
+
+        <div
+          class="text-danger contenido"
+          [ngClass]="{ 'd-block': activo == 'galeria2' }"
+        >
+          <img
+            class="img-principal"
+            src="../../assets/img/mujer/detalle-de-producto/chaqueta1-rojo.jpg"
+          />
+        </div>
+
+        <div
+          class="text-danger contenido"
+          [ngClass]="{ 'd-block': activo == 'galeria3' }"
+        >
+          <img
+            class="img-principal"
+            src="../../assets/img/mujer/detalle-de-producto/chaqueta1-azul.jpg"
+          />
+        </div>
+
+        <div
+          class="text-danger contenido"
+          [ngClass]="{ 'd-block': activo == 'galeria4' }"
+        >
+          <img
+            class="img-principal"
+            src="../../assets/img/mujer/detalle-de-producto/chaqueta1-gris.jpg"
+          />
+        </div>
+
+        <div
+          class="text-danger contenido"
+          [ngClass]="{ 'd-block': activo == 'galeria5' }"
+        >
+          <img
+            class="img-principal"
+            src="../../assets/img/mujer/detalle-de-producto/chaqueta1-verde.jpg"
+          />
+        </div>
+      </div>
+      <div class="col-8 detalles">
+        <div class="detalle-product">
+          <h2 class="title-product"><b>Lorem ipsum dolor sit</b></h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Architecto, fugiat. A enim tempore, unde voluptatibus quia provident
+            quas voluptatem vel itaque ea. Aperiam, deleniti autem!
+          </p>
+
+          <div class="precio">
+            <p><b>$ 000.000 COP</b></p>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="talla">
+                <table>
+                  <tr>
+                    <th>XS</th>
+                    <th>S</th>
+                    <th>L</th>
+                    <th>M</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <!--Color-->
+            <div class="col-6">
+              <div class="color">
+                <div class="section-colors">
+                  <button
+                    class="btn btn-dark mb-3 btn-colors"
+                    (click)="activo = 'galeria1'"
+                  ></button>
+
+                  <button
+                    class="btn btn-danger mb-3 btn-colors"
+                    (click)="activo = 'galeria2'"
+                  ></button>
+
+                  <button
+                    class="btn btn-success mb-3 btn-colors"
+                    (click)="activo = 'galeria3'"
+                  ></button>
+
+                  <button
+                    class="btn btn-info mb-3 btn-colors"
+                    (click)="activo = 'galeria4'"
+                  ></button>
+
+                  <button
+                    class="btn btn-warning mb-3 btn-colors"
+                    (click)="activo = 'galeria5'"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <!--End Color-->
+          </div>
+
+          <!--End Pruebas de Color-->
+
+          <div class="btn-comprar">
+            <button type="button" id="Comprar" class="btn btn-dark">
+              <b>Comprar</b>
+            </button>
+            <!--button type="button" id="Comprar" class="btn btn-dark" (click)="clickEvent()"><b>Comprar</b></button>
+            <h2>{{msg}}</h2>
+            <p>cantidad :{{cantidad}}
+            <input type="button" class="btn btn-outline-light text-dark" value="+" (click)="cantidad=cantidad+1">
+            <input type="button" class="btn btn-outline-light text-dark" value="-" (click)="cantidad=cantidad-1">
+            </p-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sección Recomendados-->
+<div class="recomendados container">
+  <h2 class="title-recomendados"><b>Recomendados</b></h2>
+  <div class="container">
+    <div class="box">
+      <div class="img-recomendado">
+        <img src="../../assets/img/mujer/detalle-de-producto/chaqueta2.png" />
+      </div>
+      <div class="name_job">Lorem ipsum dolor sit</div>
+    </div>
+    <div class="box">
+      <div class="img-recomendado">
+        <img src="../../assets/img/mujer/detalle-de-producto/chaqueta3.png" />
+      </div>
+      <div class="name_job">Lorem ipsum dolor sit</div>
+    </div>
+    <div class="box">
+      <div class="img-recomendado">
+        <img src="../../assets/img/mujer/detalle-de-producto/chaqueta4.png" />
+      </div>
+      <div class="name_job">Lorem ipsum dolor sit</div>
+    </div>
+  </div>
+</div>
+<!-- End Sección Recomendados-->
+
+<!--Sección contacto>
+<div class="contacto-inferior">
+  <div class="row mb-3">
+    <div class="col-8 descripcion-contactoinf">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+        elit, sed do eiusmod tempor incididunt ut labore
+      </p>
+    </div>
+    <div class="col-4 pt-5 pb-5">
+      <div>
+        <button type="button" class="btn btn-light">
+          <b
+            ><a [routerLink]="['/contacto']" class="btn-contact"
+              >Contáctanos</a
+            ></b
+          >
+        </button>
+      </div>
+    </div>
+  </div>
+</div-->
+<!--End Sección contacto-->
+
+<script>
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "producto no disponible";
+  }
+</script>

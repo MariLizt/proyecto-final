@@ -1,0 +1,33 @@
+/*Banner*/
+img.Banner-mujer {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+/*Cards*/
+img.card-img-top {
+    max-height: 420px;
+    max-width: 280px;
+    margin: auto;
+    padding: 25px;
+}
+
+.card {
+    min-width: 90%;
+    position: relative;
+    margin: 0px auto 90px;
+    min-height: 420px;
+}
+
+.card-body {
+    background: #000000c7;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    height: 100px;
+}

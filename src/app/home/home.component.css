@@ -1,0 +1,224 @@
+/*Seccion mujer*/
+
+img.preview-img-ropam {
+    width: -webkit-fill-available;
+}
+
+.col-6.card-descripcion-mujer {
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+    
+}
+
+.card-tmujer {
+    background: #F5F5F5;
+}
+
+button.btn {
+    padding: 8px 50px;
+}
+
+/*Seccion Hombre*/
+
+img.preview-img-ropah {
+    width: -webkit-fill-available;
+}
+
+.col-6.card-descripcion-hombre {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px 0px 120px;
+}
+
+.col-6.pt-5.pb-5.img-th {
+    padding: 0px 55px 0px 0px;
+}
+
+.card-thombre{
+    background: #FFFFFF;
+}
+
+
+/*Sección contacto*/
+
+.contacto-inferior {
+    background: #000;
+    color: #fff;
+}
+
+.col-8.descripcion-contactoinf {
+    display: flex;
+    align-items: center;
+    padding: 0px 58px 0px 200px;
+    font-size: 23px;
+}
+
+/*Seccion temporada*/
+
+body{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  position: relative;
+}
+body::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: #FF676D;
+  clip-path: inset(47% 0 0 0);
+  z-index: -1;
+  height: 100%;
+}
+::selection{
+  background:	#FF676D;
+  color: #fff;
+}
+
+h2.temporada-title {
+    padding: 0px 0px 25px 112px;
+}
+
+.card.t-invierno {
+    background-image: url("../../assets/img/home/invierno.jpg");
+    background-size: cover;
+    margin: 0px 50px;
+}
+
+.card.t-verano {
+    background-image: url("../../assets/img/home/verano.jpg");
+    background-size: cover;
+    margin: 0px 50px;
+}
+.card.t-primavera {
+    background-image: url("../../assets/img/home/invierno.jpg");
+    background-size: cover;
+    margin: 0px 50px;
+}
+
+.card.t-otono {
+    background-image: url("../../assets/img/home/otono.jpg");
+    background-size: cover;
+    margin: 0px 50px;
+}
+.content.text-img {
+    padding-top: 200px;
+}
+
+.container{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: center;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  /*background: #fff;*/
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .content .name{
+    text-align: left;
+    color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job{
+    text-align: justify;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #000;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+a.btn-contact {
+  text-decoration: none;
+  color: #000;
+}
+
