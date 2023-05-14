@@ -149,3 +149,14 @@ a.btn-contact {
   background-image: url(../../assets/img/mujer/detalle-de-producto/chaqueta1.jpg);
   display: block;
 }*/
+
+/*Tallas*/
+td {
+  padding: 0px 12px !important;
+  text-align: center;
+  border: 1px solid;
+}
+
+.talla {
+  padding-bottom: 30px;
+}

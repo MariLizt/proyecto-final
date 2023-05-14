@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TallasService } from '../tallas.service';
 
 @Component({
   selector: 'app-detalle-producto',
@@ -23,6 +24,14 @@ export class DetalleProductoComponent {
     this.mesg="producto no disponible";
     return this.mesg;
   }*/
+  articulos :any;
+  constructor(private tallasServicio: TallasService) {
+  }
+  
+  ngOnInit() {
+    this.articulos=this.tallasServicio.retornar();
+  }
+
 }
 
 function  mensaje(){

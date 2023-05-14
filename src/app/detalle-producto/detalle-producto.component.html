@@ -73,11 +73,21 @@
             <div class="col-6">
               <div class="talla">
                 <table>
-                  <tr>
-                    <th>XS</th>
-                    <th>S</th>
-                    <th>L</th>
-                    <th>M</th>
+                  <tr *ngFor="let articulo of articulos">
+                    <td>{{ articulo.tallanum1 }}</td>
+                    <td>{{ articulo.tallanum2 }}</td>
+                    <td>{{ articulo.tallanum3 }}</td>
+                    <td>{{ articulo.tallanum4 }}</td>
+                    <td>{{ articulo.tallanum5 }}</td>
+                    <td>{{ articulo.tallanum6 }}</td>
+                  </tr>
+                  <tr *ngFor="let articulo of articulos">
+                    <td>{{ articulo.tallaalf1 }}</td>
+                    <td>{{ articulo.tallaalf2 }}</td>
+                    <td>{{ articulo.tallaalf3 }}</td>
+                    <td>{{ articulo.tallaalf4 }}</td>
+                    <td>{{ articulo.tallaalf5 }}</td>
+                    <td>{{ articulo.tallaalf6 }}</td>
                   </tr>
                 </table>
               </div>
