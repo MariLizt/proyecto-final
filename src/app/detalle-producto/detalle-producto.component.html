@@ -59,15 +59,17 @@
       </div>
       <div class="col-8 detalles">
         <div class="detalle-product">
-          <h2 class="title-product"><b>Lorem ipsum dolor sit</b></h2>
+          <h2 class="title-product">
+            <b>{{ titlep1 | uppercase }}</b>
+          </h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Architecto, fugiat. A enim tempore, unde voluptatibus quia provident
-            quas voluptatem vel itaque ea. Aperiam, deleniti autem!
+            {{ descripcionp1 }}
           </p>
 
           <div class="precio">
-            <p><b>$ 000.000 COP</b></p>
+            <p>
+              <b>{{ preciop1 | currency : "$" }}</b>
+            </p>
           </div>
           <div class="row">
             <div class="col-6">

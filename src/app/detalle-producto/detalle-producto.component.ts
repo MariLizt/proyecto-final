@@ -32,6 +32,18 @@ export class DetalleProductoComponent {
     this.articulos=this.tallasServicio.retornar();
   }
 
+  /* Articulos*/
+  articulo = [{
+      codigo: 5000,
+      title: "Lorem ipsum dolor sit",
+      descripcion: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, fugiat. A enim tempore, unde voluptatibus quia provident quas voluptatem vel itaque ea. Aperiam, deleniti autem!",
+      precio: 120.000
+    }];
+
+    /*Producto1*/
+    titlep1 = 'Lorem ipsum dolor sit';
+    descripcionp1 = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, fugiat. A enim tempore, unde voluptatibus quia provident quas voluptatem vel itaque ea. Aperiam, deleniti autem!';
+    preciop1 = 120.000
 }
 
 function  mensaje(){
