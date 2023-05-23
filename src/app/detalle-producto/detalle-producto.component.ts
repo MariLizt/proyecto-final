@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 import { TallasService } from '../tallas.service';
 
 @Component({
@@ -11,6 +12,8 @@ export class DetalleProductoComponent {
   show: boolean = true;
   fondo: string = '';
   activo: string = 'galeria1';
+
+  codigoProducto!: number;
   /*mesg:string;
   cantidad:number;
   constructor() { 
@@ -25,13 +28,20 @@ export class DetalleProductoComponent {
     return this.mesg;
   }*/
   articulos :any;
-  constructor(private tallasServicio: TallasService) {
+  constructor(private tallasServicio: TallasService, private route: ActivatedRoute,) {
   }
   
   ngOnInit() {
     this.articulos=this.tallasServicio.retornar();
+    this.route.params.subscribe((params: Params) => {
+      this.codigoProducto = +params['codigo'];
+    });
   }
 
+  getProductoPorCodigo(codigo: number) {
+    return this.articulo.find(producto => producto.codigo === codigo);
+  }
+  
   /* Articulos*/
   articulo = [{
       codigo: 5000,

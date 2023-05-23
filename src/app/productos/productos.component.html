@@ -9,28 +9,30 @@
   <div class="row">
     <div class="col-6 col-md-4 col-sm-3">
       <div class="card">
-        <a [routerLink]="['/detalle']">
+        <a [routerLink]="['/detalle', 0]">
           <img
-            src="../../assets/img/mujer/detalle-de-producto/chaqueta1.jpg"
+            src="{{ cardproductos[0].imagen }}"
             class="card-img-top"
             alt="Producto 1"
           />
           <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit</p>
+            <p class="card-text">{{ cardproductos[0].title | uppercase }}</p>
           </div>
         </a>
       </div>
     </div>
     <div class="col-6 col-md-4 col-sm-3">
       <div class="card">
-        <img
-          src="../../assets/img/mujer/detalle-de-producto/chaqueta2.png"
-          class="card-img-top"
-          alt="Producto 1"
-        />
-        <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit</p>
-        </div>
+        <a [routerLink]="['/detalle', 1]">
+          <img
+            src="{{ cardproductos[1].imagen }}"
+            class="card-img-top"
+            alt="Producto 1"
+          />
+          <div class="card-body">
+            <p class="card-text">{{ cardproductos[1].title | uppercase }}</p>
+          </div>
+        </a>
       </div>
     </div>
     <div class="col-6 col-md-4 col-sm-3">

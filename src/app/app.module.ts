@@ -17,7 +17,7 @@ import { ContactService } from './contact.service';
 
 const routes :Routes =[
   { path: 'login', component : LoginComponent},
-  { path: 'detalle', component : DetalleProductoComponent},
+  { path: 'detalle/:codigo', component : DetalleProductoComponent},
   { path: 'home', component :HomeComponent},
   { path: 'contacto', component :ContactFormComponent},
   { path: 'productos', component :ProductosComponent},
