@@ -4,6 +4,11 @@ img.Banner-mujer {
     padding-bottom: 50px;
 }
 
+h2 {
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
 /*Cards*/
 img.card-img-top {
     max-height: 420px;
@@ -17,6 +22,7 @@ img.card-img-top {
     position: relative;
     margin: 0px auto 90px;
     min-height: 420px;
+    /*display: table-cell;*/
 }
 
 .card-body {
@@ -30,4 +36,8 @@ img.card-img-top {
     display: grid;
     align-items: center;
     height: 100px;
+}
+
+.col-6.col-md-4.col-sm-3{
+    width: 100%;
 }

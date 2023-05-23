@@ -113,6 +113,10 @@ h2.title-recomendados {
   font-size: 40px;
 }
 
+img.preview-imgr {
+  max-height: 340px;
+}
+
 /*Sección contacto*/
 
 .contacto-inferior {
@@ -170,6 +174,10 @@ td {
   float: left;
 }
 
+.color {
+  padding-left: 50px;
+}
+
 .negro{
   background-color: #000;
   color: #fff;
@@ -187,4 +195,30 @@ td {
 
 .azul{
   background-color: #311d8c;
+}
+
+.rosado{
+  background-color: #d1289c;
+}
+
+.gris{
+  background-color: #9F9F9F;
+}
+
+.beige{
+  background-color: #E8C39E;
+}
+
+.blanco{
+  border: 1px solid #000;
+
+}
+
+.cafe{
+  background-color:  #d07317;
+  
+}
+
+.purpura{
+  background-color: #8e44ad;
 }

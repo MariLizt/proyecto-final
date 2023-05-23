@@ -15,49 +15,9 @@
           <!--img src="{{ articulo[1].imagen }}" /-->
           <img
             class="img-principal"
-            src="../../assets/img/mujer/detalle-de-producto/chaqueta{{
+            src="../../assets/img/mujer/detalle-de-producto/producto{{
               idProducto
             }}-{{ color }}.jpg"
-          />
-        </div>
-
-        <div
-          class="text-danger contenido"
-          [ngClass]="{ 'd-block': activo == 'galeria2' }"
-        >
-          <img
-            class="img-principal"
-            src="../../assets/img/mujer/detalle-de-producto/chaqueta1-rojo.jpg"
-          />
-        </div>
-
-        <div
-          class="text-danger contenido"
-          [ngClass]="{ 'd-block': activo == 'galeria3' }"
-        >
-          <img
-            class="img-principal"
-            src="../../assets/img/mujer/detalle-de-producto/chaqueta1-azul.jpg"
-          />
-        </div>
-
-        <div
-          class="text-danger contenido"
-          [ngClass]="{ 'd-block': activo == 'galeria4' }"
-        >
-          <img
-            class="img-principal"
-            src="../../assets/img/mujer/detalle-de-producto/chaqueta1-gris.jpg"
-          />
-        </div>
-
-        <div
-          class="text-danger contenido"
-          [ngClass]="{ 'd-block': activo == 'galeria5' }"
-        >
-          <img
-            class="img-principal"
-            src="../../assets/img/mujer/detalle-de-producto/chaqueta1-verde.jpg"
           />
         </div>
       </div>
@@ -109,9 +69,7 @@
                   <button
                     class="btn mb-3 btn-colors {{ color }}"
                     (click)="activo = color"
-                  >
-                    {{ codigo - 1 }}
-                  </button>
+                  ></button>
                 </div>
               </div>
             </div>
@@ -143,22 +101,37 @@
   <h2 class="title-recomendados"><b>Recomendados</b></h2>
   <div class="container">
     <div class="box">
-      <div class="img-recomendado">
-        <img src="../../assets/img/mujer/detalle-de-producto/chaqueta2.png" />
-      </div>
-      <div class="name_job">Lorem ipsum dolor sit</div>
+      <a href="http://localhost:4200/detalle/9">
+        <div class="img-recomendado">
+          <img
+            class="preview-imgr"
+            src="../../assets/img/mujer/detalle-de-producto/producto9-negro.jpg"
+          />
+        </div>
+        <div class="name_job">Lorem ipsum dolor sit</div>
+      </a>
     </div>
     <div class="box">
-      <div class="img-recomendado">
-        <img src="../../assets/img/mujer/detalle-de-producto/chaqueta3.png" />
-      </div>
-      <div class="name_job">Lorem ipsum dolor sit</div>
+      <a href="http://localhost:4200/detalle/2">
+        <div class="img-recomendado">
+          <img
+            class="preview-imgr"
+            src="../../assets/img/mujer/detalle-de-producto/producto2-negro.jpg"
+          />
+        </div>
+        <div class="name_job">Lorem ipsum dolor sit</div>
+      </a>
     </div>
     <div class="box">
-      <div class="img-recomendado">
-        <img src="../../assets/img/mujer/detalle-de-producto/chaqueta4.png" />
-      </div>
-      <div class="name_job">Lorem ipsum dolor sit</div>
+      <a href="http://localhost:4200/detalle/11">
+        <div class="img-recomendado">
+          <img
+            class="preview-imgr"
+            src="../../assets/img/mujer/detalle-de-producto/producto11-blanco.jpg"
+          />
+        </div>
+        <div class="name_job">Lorem ipsum dolor sit</div>
+      </a>
     </div>
   </div>
 </div>
