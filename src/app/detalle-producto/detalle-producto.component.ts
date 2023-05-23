@@ -12,6 +12,8 @@ export class DetalleProductoComponent {
   show: boolean = true;
   fondo: string = '';
   activo: string = 'galeria1';
+  tituloProducto: string = '';
+  descripcionProducto: string = '';
 
   codigoProducto!: number;
   /*mesg:string;
@@ -34,20 +36,31 @@ export class DetalleProductoComponent {
   ngOnInit() {
     this.articulos=this.tallasServicio.retornar();
     this.route.params.subscribe((params: Params) => {
-      this.codigoProducto = +params['codigo'];
+      const codigoProducto = +params['codigo'];
+      const producto = this.articulo.find(producto => producto.codigo === codigoProducto);
+      this.tituloProducto = producto ? producto.title : '';
+      this.descripcionProducto = producto ? producto.descripcion : '';
     });
+    
   }
 
   getProductoPorCodigo(codigo: number) {
-    return this.articulo.find(producto => producto.codigo === codigo);
+    return this.articulos.find(codigo);
   }
   
   /* Articulos*/
   articulo = [{
-      codigo: 5000,
-      title: "Lorem ipsum dolor sit",
+      codigo: 1,
+      title: "Chaqueta Térmica Con Capucha",
+      descripcion: "Ropa casual con material suave, gran idea como un pequeño regalo de cumpleaños para mujeres, regalo para la persona que amas, transpirable. No daña la piel,un gran accesorio para mantener el calor en climas fríos y fríos, adecuado para uso casual, playa, fiesta, trabajo, etc. Uso en diferentes ocasiones.",
+      precio: 113.000,
+      imagen: 'http://localhost:4200/assets/img/mujer/detalle-de-producto/chaqueta1.jpg',
+      colores: ["negro, rojo, verde"]
+    },{
+      codigo: 2,
+      title: "Dolor sit",
       descripcion: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, fugiat. A enim tempore, unde voluptatibus quia provident quas voluptatem vel itaque ea. Aperiam, deleniti autem!",
-      precio: 120.000
+      precio: 180.000
     }];
 
     /*Producto1*/
