@@ -160,3 +160,26 @@ td {
 .talla {
   padding-bottom: 30px;
 }
+
+.section-colors {
+  float: left;
+}
+
+.negro{
+  background-color: #000;
+  color: #fff;
+}
+
+.rojo{
+  background-color: red;
+  color: #fff;
+}
+
+.verde{
+  background-color: rgb(18, 127, 63);
+  color: #fff;
+}
+
+.azul{
+  background-color: #311d8c;
+}

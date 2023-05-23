@@ -11,9 +11,10 @@ import { TallasService } from '../tallas.service';
 export class DetalleProductoComponent {
   show: boolean = true;
   fondo: string = '';
-  activo: string = 'galeria1';
+  activo: string = 'negro';
   tituloProducto: string = '';
   descripcionProducto: string = '';
+  precioProducto: string = '';
 
   codigoProducto!: number;
   /*mesg:string;
@@ -40,6 +41,7 @@ export class DetalleProductoComponent {
       const producto = this.articulo.find(producto => producto.codigo === codigoProducto);
       this.tituloProducto = producto ? producto.title : '';
       this.descripcionProducto = producto ? producto.descripcion : '';
+      this.precioProducto = producto ? producto.precio : '';
     });
     
   }
@@ -53,14 +55,15 @@ export class DetalleProductoComponent {
       codigo: 1,
       title: "Chaqueta Térmica Con Capucha",
       descripcion: "Ropa casual con material suave, gran idea como un pequeño regalo de cumpleaños para mujeres, regalo para la persona que amas, transpirable. No daña la piel,un gran accesorio para mantener el calor en climas fríos y fríos, adecuado para uso casual, playa, fiesta, trabajo, etc. Uso en diferentes ocasiones.",
-      precio: 113.000,
+      precio: '$113.000',
       imagen: 'http://localhost:4200/assets/img/mujer/detalle-de-producto/chaqueta1.jpg',
-      colores: ["negro, rojo, verde"]
+      colores: ["negro", "rojo", "verde"]
     },{
       codigo: 2,
-      title: "Dolor sit",
-      descripcion: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, fugiat. A enim tempore, unde voluptatibus quia provident quas voluptatem vel itaque ea. Aperiam, deleniti autem!",
-      precio: 180.000
+      title: "Chaqueta de Invierno",
+      descripcion: "Abrigo con capucha de felpa para mujer, chaquetas gruesas cálidas con estampado Floral, abrigo forrado de piel, chaqueta con cremallera para mujer, Invierno",
+      precio: '$100.000',
+      colores: ["negro", "azul"]
     }];
 
     /*Producto1*/

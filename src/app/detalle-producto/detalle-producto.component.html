@@ -9,11 +9,15 @@
 
         <div
           class="text-info contenido"
-          [ngClass]="{ 'd-block': activo == 'galeria1' }"
+          [ngClass]="{ 'd-block': activo === color }"
+          *ngFor="let color of articulo[0].colores"
         >
+          <!--img src="{{ articulo[1].imagen }}" /-->
           <img
             class="img-principal"
-            src="../../assets/img/mujer/detalle-de-producto/chaqueta1.jpg"
+            src="../../assets/img/mujer/detalle-de-producto/chaqueta1-{{
+              color
+            }}.jpg"
           />
         </div>
 
@@ -68,7 +72,7 @@
 
           <div class="precio">
             <p>
-              <b>{{ preciop1 | currency : "$" }}</b>
+              <b>{{ precioProducto }}</b>
             </p>
           </div>
           <div class="row">
@@ -98,30 +102,13 @@
             <!--Color-->
             <div class="col-6">
               <div class="color">
-                <div class="section-colors">
+                <div
+                  class="section-colors"
+                  *ngFor="let color of articulo[0].colores"
+                >
                   <button
-                    class="btn btn-dark mb-3 btn-colors"
-                    (click)="activo = 'galeria1'"
-                  ></button>
-
-                  <button
-                    class="btn btn-danger mb-3 btn-colors"
-                    (click)="activo = 'galeria2'"
-                  ></button>
-
-                  <button
-                    class="btn btn-success mb-3 btn-colors"
-                    (click)="activo = 'galeria3'"
-                  ></button>
-
-                  <button
-                    class="btn btn-info mb-3 btn-colors"
-                    (click)="activo = 'galeria4'"
-                  ></button>
-
-                  <button
-                    class="btn btn-warning mb-3 btn-colors"
-                    (click)="activo = 'galeria5'"
+                    class="btn mb-3 btn-colors {{ color }}"
+                    (click)="activo = color"
                   ></button>
                 </div>
               </div>

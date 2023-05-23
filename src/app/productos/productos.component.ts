@@ -9,12 +9,12 @@ export class ProductosComponent {
 
   cardproductos = [{
     codigo: 1,
-    title: "Lorem ipsum dolor sit",
+    title: "Chaqueta Térmica Con Capucha",
     imagen: "http://localhost:4200/assets/img/mujer/detalle-de-producto/chaqueta1.jpg"
   },{
     codigo: 2,
-    title: "Dolor sit",
-    imagen: "http://localhost:4200/assets/img/mujer/detalle-de-producto/chaqueta2.png"
+    title: "Chaqueta de Invierno",
+    imagen: "http://localhost:4200/assets/img/mujer/detalle-de-producto/chaqueta2-negro.jpg"
   }];
 
   /*Producto1*/
