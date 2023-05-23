@@ -10,14 +10,14 @@
         <div
           class="text-info contenido"
           [ngClass]="{ 'd-block': activo === color }"
-          *ngFor="let color of articulo[0].colores"
+          *ngFor="let color of articulo[codigo - 1].colores"
         >
           <!--img src="{{ articulo[1].imagen }}" /-->
           <img
             class="img-principal"
-            src="../../assets/img/mujer/detalle-de-producto/chaqueta1-{{
-              color
-            }}.jpg"
+            src="../../assets/img/mujer/detalle-de-producto/chaqueta{{
+              idProducto
+            }}-{{ color }}.jpg"
           />
         </div>
 
@@ -104,12 +104,14 @@
               <div class="color">
                 <div
                   class="section-colors"
-                  *ngFor="let color of articulo[0].colores"
+                  *ngFor="let color of articulo[codigo - 1].colores"
                 >
                   <button
                     class="btn mb-3 btn-colors {{ color }}"
                     (click)="activo = color"
-                  ></button>
+                  >
+                    {{ codigo - 1 }}
+                  </button>
                 </div>
               </div>
             </div>

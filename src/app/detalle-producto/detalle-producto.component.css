@@ -22,6 +22,10 @@ button.btn {
     font-size: 25px;
 }
 
+img.img-principal {
+  max-height: 600px;
+}
+
 /*Recomendados*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -161,6 +165,7 @@ td {
   padding-bottom: 30px;
 }
 
+/*Colores*/
 .section-colors {
   float: left;
 }

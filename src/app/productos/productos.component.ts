@@ -15,6 +15,10 @@ export class ProductosComponent {
     codigo: 2,
     title: "Chaqueta de Invierno",
     imagen: "http://localhost:4200/assets/img/mujer/detalle-de-producto/chaqueta2-negro.jpg"
+  },{
+    codigo: 3,
+    title: "Chaqueta de Invierno",
+    imagen: "http://localhost:4200/assets/img/mujer/detalle-de-producto/chaqueta2-negro.jpg"
   }];
 
   /*Producto1*/
