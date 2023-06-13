@@ -1,13 +1,29 @@
 /*Banner*/
-img.Banner-mujer {
-    width: 100%;
-    padding-bottom: 50px;
-}
 
-h2 {
-    text-align: left;
-    padding-bottom: 2rem;
-}
+.banner-ct-mujer {
+    position: relative;
+    width: 100%;
+    padding-top: 5rem;
+  }
+  
+  .banner-ct-mujer h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .banner-ct-mujer .Banner-mujer {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    opacity: 60%;
+    padding-bottom: 3rem;
+  }
 
 /*Cards*/
 img.card-img-top {
@@ -40,4 +56,14 @@ img.card-img-top {
 
 .col-6.col-md-4.col-sm-3{
     width: 100%;
+}
+
+
+/*Títulos Productos*/
+
+h2 {
+    text-shadow: 5px 2px 4px #bababa;
+    text-align: left;
+    color: #817e7e;
+    font-size: 25px;
 }

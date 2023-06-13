@@ -14,6 +14,13 @@ import { ProductosComponent } from './productos/productos.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './contact.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
+import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 
 const routes :Routes =[
   { path: 'login', component : LoginComponent},
@@ -21,8 +28,10 @@ const routes :Routes =[
   { path: 'home', component :HomeComponent},
   { path: 'contacto', component :ContactFormComponent},
   { path: 'productos', component :ProductosComponent},
+  { path: 'sobre-nosotros', component :SobreNosotrosComponent},
   { path: '', component: HomeComponent , pathMatch: 'full' },
   { path: '**', redirectTo: '/', pathMatch: 'full' }
+
 ]
 
 
@@ -35,14 +44,19 @@ const routes :Routes =[
     HeadComponent,
     LoginComponent,
     ProductosComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    SobreNosotrosComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [
     ContactService

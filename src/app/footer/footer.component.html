@@ -2,14 +2,15 @@
 <div class="contacto-inferior">
   <div class="row mb-3">
     <div class="col-8 descripcion-contactoinf">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing <br />
-        elit, sed do eiusmod tempor incididunt ut labore
+      <p class="franja-negra-text">
+        ¡Nos encantaría saber de ti! No dudes en contactarnos para cualquier
+        consulta, comentario o colaboración.
       </p>
     </div>
     <div class="col-4 pt-5 pb-5">
       <div>
         <button type="button" class="btn btn-light">
+          <mat-icon>perm_phone_msg</mat-icon>
           <b
             ><a [routerLink]="['/contacto']" class="btn-contact"
               >Contáctanos</a
@@ -34,7 +35,9 @@
         <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
           <ul class="list-unstyled link-left mb-0">
             <li>
-              <a href="#!">Sobre Nosotros</a>
+              <a (click)="scrollToTop()" [routerLink]="['/sobre-nosotros']"
+                >Sobre Nosotros</a
+              >
             </li>
           </ul>
         </div>
@@ -44,7 +47,9 @@
         <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
           <ul class="list-unstyled link-left mb-0">
             <li>
-              <a href="#!">Contáctanos</a>
+              <a (click)="scrollToTop()" [routerLink]="['/contacto']"
+                >Contáctanos</a
+              >
             </li>
           </ul>
         </div>
@@ -54,7 +59,7 @@
         <div class="col-lg-1 col-md-6 mb-4 mb-md-0">
           <ul class="list-unstyled link-left mb-0">
             <li>
-              <a href="#!">Contáctanos</a>
+              <a [routerLink]="['/contacto']"> </a>
             </li>
           </ul>
         </div>
@@ -64,7 +69,7 @@
         <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
           <ul class="list-unstyled link-center mb-0">
             <li>
-              <a href="#!"
+              <a href="#"
                 ><img
                   class="logo-footer"
                   src="../../assets/img/logos/logo-n.png"
@@ -78,7 +83,7 @@
         <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
           <ul class="list-unstyled mb-0 link-right">
             <li>
-              <a href="#!">Temporadas</a>
+              <a [routerLink]="['/productos']"></a>
             </li>
           </ul>
         </div>
@@ -88,7 +93,7 @@
         <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
           <ul class="list-unstyled mb-0 link-right">
             <li>
-              <a href="#!">Mujer</a>
+              <a (click)="scrollToTop()" [routerLink]="['/productos']">Mujer</a>
             </li>
           </ul>
         </div>
@@ -98,7 +103,7 @@
         <div class="col-lg-1 col-md-6 mb-4 mb-md-0">
           <ul class="list-unstyled mb-0 link-right">
             <li>
-              <a href="#!">Hombre</a>
+              <a (click)="scrollToTop()" href="#!">Hombre</a>
             </li>
           </ul>
         </div>
@@ -136,7 +141,10 @@
         href="https://web.whatsapp.com/"
         target="_blank"
         role="button"
-        ><img src="../../assets/img/footer/whatsapp.png" width="30"
+        ><img
+          src="../../assets/img/footer/whatsapp.png"
+          width="30"
+          class="whatsapp-color"
       /></a>
 
       <!-- YouTube -->

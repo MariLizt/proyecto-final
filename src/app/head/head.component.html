@@ -1,4 +1,4 @@
-<img
+<!--img
   src="../../assets/img/logos/logo-n.png"
   class="rounded mx-auto d-block border-0"
   height="70px"
@@ -12,7 +12,7 @@
   <li class="nav-item">
     <a class="nav-link text-white" [routerLink]="['/productos']">Ropa Mujer</a>
   </li>
-  <!--<li class="nav-item">
+  <<li class="nav-item">
     <a class="nav-link text-white " href="#">Hombre</a>
   </li>
   <li class="nav-item ">
@@ -20,8 +20,70 @@
   </li>
   <li class="nav-item ">
     <a class="nav-link text-white" href="#">Mujer</a>
-  </li>-->
+  </li>>
   <li class="nav-item">
     <a class="nav-link text-white" [routerLink]="['/login']">acceso</a>
   </li>
-</ul>
+</ul-->
+<div class="menu-principal">
+  <button mat-button>
+    <a class="logo-header" href="#"
+      ><img
+        class="logo-header"
+        src="../../assets/img/logos/logo-n.png"
+        alt="Logo"
+        width="40px"
+    /></a>
+  </button>
+
+  <button mat-button [matMenuTriggerFor]="ropa">Ropa</button>
+
+  <mat-menu #ropa="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="ropamujer">Ropa de Mujer</button>
+    <button mat-menu-item [matMenuTriggerFor]="ropahombre">
+      Ropa de Hombre
+    </button>
+  </mat-menu>
+
+  <mat-menu #ropamujer="matMenu">
+    <a
+      (click)="scrollToTopChaquetas()"
+      mat-menu-item
+      [routerLink]="['/productos']"
+      >Chaquetas</a
+    >
+    <a
+      (click)="scrollToTopPantalones()"
+      mat-menu-item
+      [routerLink]="['/productos']"
+      >Pantalones</a
+    >
+    <a mat-menu-item [routerLink]="['/productos']">Blusas</a>
+    <a mat-menu-item [routerLink]="['/productos']">Vestidos</a>
+    <a
+      (click)="scrollToTopZapatos()"
+      mat-menu-item
+      [routerLink]="['/productos']"
+      >Zapatos</a
+    >
+  </mat-menu>
+
+  <mat-menu #ropahombre="matMenu">
+    <a mat-menu-item href="#">Chaquetas</a>
+    <a mat-menu-item href="#">Pantalones</a>
+    <a mat-menu-item href="#">Camisas</a>
+    <a mat-menu-item href="#">Trajes</a>
+    <a mat-menu-item href="#">Zapatos</a>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="informacion">Información</button>
+
+  <mat-menu #informacion="matMenu">
+    <a mat-menu-item [routerLink]="['/sobre-nosotros']">¿Quienes Somos?</a>
+    <a mat-menu-item [routerLink]="['/contacto']">Contacto</a>
+  </mat-menu>
+
+  <button mat-button>
+    <a [routerLink]="['/login']"> Login</a>
+  </button>
+</div>

@@ -85,3 +85,14 @@ img.logo-footer {
   .contenido.d-block {
     display: block;
   }
+
+  p.franja-negra-text {
+    line-height: 30px;
+}
+
+button.btn.btn-light {
+  display: flex;
+}
+
+
+/*Redes hovver*/

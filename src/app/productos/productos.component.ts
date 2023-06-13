@@ -15,6 +15,7 @@ export class ProductosComponent {
     return listadoP;
   }
 
+
   cardproductos = [{
     codigo: 1,
     title: "Chaqueta Térmica Con Capucha",
@@ -67,8 +68,7 @@ export class ProductosComponent {
 
 
   /*Producto1*/
-  titlep1 = 'Lorem ipsum dolor sit';
-  descripcionp1 = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, fugiat. A enim tempore, unde voluptatibus quia provident quas voluptatem vel itaque ea. Aperiam, deleniti autem!';
-  preciop1 = 120.000
+  nombresProductos: string[] = ['chaquetas', '', 'pantalones', 'zapatos', 'vestidos', 'complementos'];
+
 }
 

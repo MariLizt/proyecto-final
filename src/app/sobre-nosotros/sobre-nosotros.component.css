@@ -1,0 +1,34 @@
+/*Banner*/
+
+.banner-sobrenosotros {
+    position: relative;
+    width: 100%;
+  }
+  
+  .banner-sobrenosotros h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .banner-sobrenosotros .Banner-sobre-nosotros {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    opacity: 60%;
+    padding-bottom: 3rem;
+  }
+
+
+*{
+  text-align: justify;
+}
+
+.img-nosotros {
+  text-align: center;
+}
