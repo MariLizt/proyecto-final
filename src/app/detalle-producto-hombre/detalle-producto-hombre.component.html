@@ -1,0 +1,187 @@
+<div class="detalle">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <!--img
+            class="img-principal"
+            src="../../assets/img/hombre/detalle-de-producto/chaqueta1.jpg"
+          /-->
+
+        <div
+          class="text-info contenido"
+          [ngClass]="{ 'd-block': activo === color }"
+          *ngFor="let color of articulo[codigo - 1].colores"
+        >
+          <!--img src="{{ articulo[1].imagen }}" /-->
+          <img
+            class="img-principal"
+            src="../../assets/img/hombre/detalle-de-producto/producto{{
+              idProducto
+            }}-{{ color }}.jpg"
+          />
+        </div>
+      </div>
+      <div class="col-8 detalles">
+        <div class="detalle-product">
+          <h2 class="title-product">
+            <b>{{ tituloProducto | uppercase }}</b>
+          </h2>
+          <p>
+            {{ descripcionProducto }}
+          </p>
+
+          <div class="precio">
+            <p>
+              <b>{{ precioProducto }}</b>
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="talla">
+                <table>
+                  <tr *ngFor="let articulo of articulos">
+                    <td>{{ articulo.tallanum1 }}</td>
+                    <td>{{ articulo.tallanum2 }}</td>
+                    <td>{{ articulo.tallanum3 }}</td>
+                    <td>{{ articulo.tallanum4 }}</td>
+                    <td>{{ articulo.tallanum5 }}</td>
+                    <td>{{ articulo.tallanum6 }}</td>
+                  </tr>
+                  <tr *ngFor="let articulo of articulos">
+                    <td>{{ articulo.tallaalf1 }}</td>
+                    <td>{{ articulo.tallaalf2 }}</td>
+                    <td>{{ articulo.tallaalf3 }}</td>
+                    <td>{{ articulo.tallaalf4 }}</td>
+                    <td>{{ articulo.tallaalf5 }}</td>
+                    <td>{{ articulo.tallaalf6 }}</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <!--Color-->
+            <div class="col-6">
+              <div class="color">
+                <div
+                  class="section-colors"
+                  *ngFor="let color of articulo[codigo - 1].colores"
+                >
+                  <button
+                    class="btn mb-3 btn-colors {{ color }}"
+                    (click)="activo = color"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <!--End Color-->
+          </div>
+
+          <!--End Pruebas de Color-->
+          <mat-icon class="mat-icon-album" svgIcon="thumb-up"></mat-icon>
+          <div class="btn-comprar">
+            <button
+              type="button"
+              id="Comprar"
+              class="btn btn-dark"
+              (click)="agregarAlCarrito()"
+            >
+              Agregar al carrito
+            </button>
+
+            <!--button type="button" id="Comprar" class="btn btn-dark" (click)="clickEvent()"><b>Comprar</b></button>
+              <h2>{{msg}}</h2>
+              <p>cantidad :{{cantidad}}
+              <input type="button" class="btn btn-outline-light text-dark" value="+" (click)="cantidad=cantidad+1">
+              <input type="button" class="btn btn-outline-light text-dark" value="-" (click)="cantidad=cantidad-1">
+              </p-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sección Comentarios-->
+<div class="cont-comentarios">
+  <h2 class="title-recomendados"><b>Comentarios</b></h2>
+
+  <div class="comentarios container">
+    <app-alta-cliente></app-alta-cliente>
+  </div>
+  <div class="opiniones container">
+    <app-listado-clientes></app-listado-clientes>
+  </div>
+</div>
+
+<!-- END Sección Comentarios -->
+
+<!-- Sección Recomendados-->
+<div class="recomendados container">
+  <h2 class="title-recomendados"><b>Recomendados</b></h2>
+  <div class="container">
+    <div class="box">
+      <a href="http://localhost:4200/detalle-producto-hombre/9">
+        <div class="img-recomendado">
+          <img
+            class="preview-imgr"
+            src="../../assets/img/hombre/detalle-de-producto/producto9-negro.jpg"
+          />
+        </div>
+        <div class="name_job">JEAN TIRO ALTO</div>
+      </a>
+    </div>
+    <div class="box">
+      <a href="http://localhost:4200/detalle-producto-hombre/2">
+        <div class="img-recomendado">
+          <img
+            class="preview-imgr"
+            src="../../assets/img/hombre/detalle-de-producto/producto2-negro.jpg"
+          />
+        </div>
+        <div class="name_job">CHAQUETA DE INVIERNO</div>
+      </a>
+    </div>
+    <div class="box">
+      <a href="http://localhost:4200/detalle-producto-hombre/11">
+        <div class="img-recomendado">
+          <img
+            class="preview-imgr"
+            src="../../assets/img/hombre/detalle-de-producto/producto11-blanco.jpg"
+          />
+        </div>
+        <div class="name_job">BOTÍN FOREVER 21</div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- End Sección Recomendados-->
+
+<!--Sección contacto>
+  <div class="contacto-inferior">
+    <div class="row mb-3">
+      <div class="col-8 descripcion-contactoinf">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+          elit, sed do eiusmod tempor incididunt ut labore
+        </p>
+      </div>
+      <div class="col-4 pt-5 pb-5">
+        <div>
+          <button type="button" class="btn btn-light">
+            <b
+              ><a [routerLink]="['/contacto']" class="btn-contact"
+                >Contáctanos</a
+              ></b
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div-->
+<!--End Sección contacto-->
+
+<script>
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "producto no disponible";
+  }
+</script>

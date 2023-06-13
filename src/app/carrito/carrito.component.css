@@ -1,0 +1,50 @@
+.container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/*Banner*/
+
+.banner-carrito {
+    position: relative;
+    width: 100%;
+  }
+  
+  .banner-carrito h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .banner-carrito .Banner-car {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    opacity: 60%;
+    padding-bottom: 3rem;
+  }
+
+  h2 {
+
+    padding-top: 2rem;
+    font-size: 25px!important;
+}
+
+.container.recibo {
+    background-image: url(../../assets/img/carrito/recibo.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position-x: 0;
+    background-position-y: 0;
+    margin: auto;
+    width: 48%;
+}
+
+.container-pie {
+    padding: 3rem;
+}

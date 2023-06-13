@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,14 +22,22 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
+import { ClientesModule } from './clientes/clientes.module';
+import { CarritoComponent } from './carrito/carrito.component';
+import { CarritoService } from './carrito.service';
+import { ProductosHombresComponent } from './productos-hombres/productos-hombres.component';
+import { DetalleProductoHombreComponent } from './detalle-producto-hombre/detalle-producto-hombre.component';
 
 const routes :Routes =[
   { path: 'login', component : LoginComponent},
   { path: 'detalle/:codigo', component : DetalleProductoComponent},
+  { path: 'detalle-producto/:codigo', component : DetalleProductoHombreComponent},
   { path: 'home', component :HomeComponent},
   { path: 'contacto', component :ContactFormComponent},
   { path: 'productos', component :ProductosComponent},
+  { path: 'productos-hombres', component :ProductosHombresComponent},
   { path: 'sobre-nosotros', component :SobreNosotrosComponent},
+  { path: 'carrito', component :CarritoComponent},
   { path: '', component: HomeComponent , pathMatch: 'full' },
   { path: '**', redirectTo: '/', pathMatch: 'full' }
 
@@ -45,10 +54,14 @@ const routes :Routes =[
     LoginComponent,
     ProductosComponent,
     ContactFormComponent,
-    SobreNosotrosComponent
+    SobreNosotrosComponent,
+    ProductosHombresComponent,
+    DetalleProductoHombreComponent,
+    
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
@@ -56,10 +69,12 @@ const routes :Routes =[
     BrowserAnimationsModule,
     MatButtonModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    ClientesModule
   ],
   providers: [
-    ContactService
+    ContactService,
+    CarritoService
   ],
   bootstrap: [AppComponent]
 })

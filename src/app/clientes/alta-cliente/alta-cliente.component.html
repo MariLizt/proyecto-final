@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 nombre-form">
+      <p>
+        <span>Nombre: </span>
+        <input type="text" [(ngModel)]="cliente.nombre" />
+      </p>
+    </div>
+    <div class="col-md-4 descripcion-form">
+      <p>
+        <span>Comentario: </span>
+        <input type="text" [(ngModel)]="cliente.comentario" />
+      </p>
+    </div>
+    <div class="col-md-2 calificacion-form">
+      <p>
+        <span>Calificación: </span>
+        <select [(ngModel)]="cliente.grupo">
+          <option *ngFor="let grupo of grupos" value="{{ grupo.id }}">
+            {{ grupo.nombre }}
+          </option>
+        </select>
+      </p>
+    </div>
+
+    <div class="col-md-2 calificacion-form">
+      <p>
+        <button class="btn btn-light" (click)="this.nuevoCliente()">
+          <b>Enviar</b>
+        </button>
+      </p>
+    </div>
+  </div>
+</div>

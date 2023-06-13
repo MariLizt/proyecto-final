@@ -20,3 +20,19 @@ span.mdc-button__label {
 .mat-mdc-button:not(:disabled) {
     color: #fff;
 }
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-principal {
+    padding-left: 50px !important;
+    /* font-size: 37px!important; */
+}
+
+button.space {
+    width: 50px;
+    background: #000;
+    border: 0px;
+}

@@ -1,0 +1,18 @@
+<div class="banner-carrito">
+  <h1><b>Carrito</b></h1>
+  <img class="Banner-car" src="../../assets/img/carrito/banner.jpg" />
+</div>
+
+<div class="container recibo">
+  <div class="detalle">
+    <h2><b>Productos adquiridos:</b></h2>
+    <div>
+      <pre>{{ stringifyCartItems() }}</pre>
+    </div>
+    <button type="button" class="btn btn-dark" (click)="mostrarMensaje()">
+      <b>Confirmar compra</b>
+    </button>
+  </div>
+</div>
+
+<div class="container-pie"></div>

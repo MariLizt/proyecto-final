@@ -1,0 +1,42 @@
+<div class="banner-ct-mujer">
+  <h1><b>Ropa de Hombres</b></h1>
+  <img
+    class="Banner-mujer"
+    src="../../assets/img/hombre/interna-principal/banner-principal.jpg"
+  />
+</div>
+
+<div class="productos-items container text-center">
+  <div class="row">
+    <div class="col-6 col-md-4 col-sm-3">
+      <ng-container
+        *ngFor="let grupo of listaprodArray(cardproductos, 3); let i = index"
+      >
+        <div class="row">
+          <h2 class="{{ nombresProductos[(i / 1) % nombresProductos.length] }}">
+            <b>{{
+              nombresProductos[(i / 1) % nombresProductos.length] | uppercase
+            }}</b>
+          </h2>
+          <div class="col" *ngFor="let producto of grupo">
+            <div class="card" id="producto-{{ producto.codigo }}">
+              <a
+                (click)="scrollToTop()"
+                [routerLink]="['/detalle-producto', producto.codigo]"
+              >
+                <img
+                  src="{{ producto.imagen }}"
+                  class="card-img-top"
+                  alt="Producto 1"
+                />
+                <div class="card-body">
+                  <p class="card-text">{{ producto.title | uppercase }}</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

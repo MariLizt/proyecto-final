@@ -82,9 +82,9 @@
           <div class="details">
             <div class="name">Invierno</div>
             <div class="job">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Architecto, fugiat. A enim tempore, unde voluptatibus quia
-              provident
+              Adéntrate en un mundo de prendas elegantes y acogedoras, diseñadas
+              para abrazar el frío y mantenerte a la moda durante los meses más
+              helados.
             </div>
           </div>
         </div>
@@ -94,9 +94,9 @@
           <div class="details">
             <div class="name">Verano</div>
             <div class="job">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Architecto, fugiat. A enim tempore, unde voluptatibus quia
-              provident
+              Sumérgete en una experiencia llena de estilo y frescura mientras
+              exploras nuestra irresistible colección de ropa para esta
+              temporada tan esperada.
             </div>
           </div>
         </div>
@@ -108,9 +108,9 @@
           <div class="details">
             <div class="name">Primavera</div>
             <div class="job">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Architecto, fugiat. A enim tempore, unde voluptatibus quia
-              provident
+              Sumérgete en un mundo lleno de colores vibrantes, estampados
+              florales y prendas que capturan la esencia de esta maravillosa
+              estación.
             </div>
           </div>
         </div>
@@ -120,9 +120,8 @@
           <div class="details">
             <div class="name">Otoño</div>
             <div class="job">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Architecto, fugiat. A enim tempore, unde voluptatibus quia
-              provident
+              Sumérgete en el encanto de la temporada con nuestra exquisita
+              selección de ropa otoñal.
             </div>
           </div>
         </div>
@@ -162,7 +161,10 @@
             </p>
             <button type="button" class="btn btn-dark pl-4">
               <b>
-                <a class="btn-principal-pro" [routerLink]="['/productos']"
+                <a
+                  (click)="scrollToTop()"
+                  class="btn-principal-pro"
+                  [routerLink]="['/productos']"
                   >Ver Todo</a
                 ></b
               >
@@ -180,11 +182,18 @@
           <div class="preview-tiendah">
             <h2><b>Ropa de Hombre</b></h2>
             <p class="pt-3 pb-3">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+              Descubre nuestra cuidadosa selección de prendas modernas y
+              sofisticadas diseñadas para realzar tu personalidad y resaltar tu
+              individualidad.
             </p>
-            <button type="button" class="btn btn-dark"><b>Ver Todo</b></button>
+            <button type="button" class="btn btn-dark">
+              <a
+                (click)="scrollToTop()"
+                class="btn-principal-pro"
+                [routerLink]="['/productos-hombres']"
+                >Ver Todo</a
+              >
+            </button>
           </div>
         </div>
         <div class="col-6 pt-5 pb-5 img-th">

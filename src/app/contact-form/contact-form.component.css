@@ -12,6 +12,7 @@ form.ng-untouched.ng-pristine.ng-invalid {
     padding: 20px;
     border-radius: 20px;
     background: #fff;
+    box-shadow: 11px 13px 5px #5e5d5d;
 }
 
 form.ng-pristine.ng-invalid.ng-touched {
@@ -20,3 +21,28 @@ form.ng-pristine.ng-invalid.ng-touched {
     border-radius: 20px;
     background: #fff;
 }
+
+/*Banner*/
+
+.banner-contacto {
+    position: relative;
+    width: 100%;
+  }
+  
+  .banner-contacto h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .banner-contacto .Banner-contacto-int {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    opacity: 60%;
+  }

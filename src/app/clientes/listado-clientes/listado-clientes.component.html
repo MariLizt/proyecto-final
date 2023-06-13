@@ -1,0 +1,8 @@
+<div *ngIf="!clientes.length">No hay comentarios</div>
+<div>
+  <article *ngFor="let cliente of clientes">
+    <span>{{ cliente.nombre }}</span>
+    <span>{{ cliente.comentario }}</span>
+    <span>{{ cliente.grupo }}</span>
+  </article>
+</div>

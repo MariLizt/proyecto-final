@@ -12,7 +12,10 @@
         <button type="button" class="btn btn-light">
           <mat-icon>perm_phone_msg</mat-icon>
           <b
-            ><a [routerLink]="['/contacto']" class="btn-contact"
+            ><a
+              (click)="scrollToTop()"
+              [routerLink]="['/contacto']"
+              class="btn-contact"
               >Contáctanos</a
             ></b
           >
@@ -103,7 +106,9 @@
         <div class="col-lg-1 col-md-6 mb-4 mb-md-0">
           <ul class="list-unstyled mb-0 link-right">
             <li>
-              <a (click)="scrollToTop()" href="#!">Hombre</a>
+              <a (click)="scrollToTop()" [routerLink]="['/productos-hombres']"
+                >Hombre</a
+              >
             </li>
           </ul>
         </div>
@@ -152,10 +157,8 @@
         class="btn btn-outline-light btn-floating m-1"
         href="https://www.youtube.com/"
         role="button"
-        ><img
-          src="../../assets/img/footer/youtube.png"
-          target="_blank"
-          width="30"
+        target="_blank"
+        ><img src="../../assets/img/footer/youtube.png" width="30"
       /></a>
     </section>
     <!-- Section: Social media -->

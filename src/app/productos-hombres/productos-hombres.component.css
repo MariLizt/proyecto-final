@@ -1,0 +1,69 @@
+/*Banner*/
+
+.banner-ct-mujer {
+    position: relative;
+    width: 100%;
+    padding-top: 5rem;
+  }
+  
+  .banner-ct-mujer h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .banner-ct-mujer .Banner-mujer {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    opacity: 60%;
+    padding-bottom: 3rem;
+  }
+
+/*Cards*/
+img.card-img-top {
+    max-height: 420px;
+    max-width: 280px;
+    margin: auto;
+    padding: 25px;
+}
+
+.card {
+    min-width: 90%;
+    position: relative;
+    margin: 0px auto 90px;
+    min-height: 420px;
+    /*display: table-cell;*/
+}
+
+.card-body {
+    background: #000000c7;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    height: 100px;
+}
+
+.col-6.col-md-4.col-sm-3{
+    width: 100%;
+}
+
+
+/*Títulos Productos*/
+
+h2 {
+    text-shadow: 5px 2px 4px #bababa;
+    text-align: left;
+    color: #817e7e;
+    font-size: 25px;
+}

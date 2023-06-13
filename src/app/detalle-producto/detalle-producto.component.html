@@ -80,10 +80,15 @@
           <!--End Pruebas de Color-->
           <mat-icon class="mat-icon-album" svgIcon="thumb-up"></mat-icon>
           <div class="btn-comprar">
-            <button type="button" id="Comprar" class="btn btn-dark">
-              <mat-icon>shopping_cart</mat-icon>
-              <b>Comprar</b>
+            <button
+              type="button"
+              id="Comprar"
+              class="btn btn-dark"
+              (click)="agregarAlCarrito()"
+            >
+              Agregar al carrito
             </button>
+
             <!--button type="button" id="Comprar" class="btn btn-dark" (click)="clickEvent()"><b>Comprar</b></button>
             <h2>{{msg}}</h2>
             <p>cantidad :{{cantidad}}
@@ -96,6 +101,19 @@
     </div>
   </div>
 </div>
+<!-- Sección Comentarios-->
+<div class="cont-comentarios">
+  <h2 class="title-recomendados"><b>Comentarios</b></h2>
+
+  <div class="comentarios container">
+    <app-alta-cliente></app-alta-cliente>
+  </div>
+  <div class="opiniones container">
+    <app-listado-clientes></app-listado-clientes>
+  </div>
+</div>
+
+<!-- END Sección Comentarios -->
 
 <!-- Sección Recomendados-->
 <div class="recomendados container">

@@ -30,11 +30,13 @@
     <a class="logo-header" href="#"
       ><img
         class="logo-header"
-        src="../../assets/img/logos/logo-n.png"
+        src="../../assets/img/logos/logo-b.jpg"
         alt="Logo"
-        width="40px"
+        width="60px"
     /></a>
   </button>
+
+  <button class="space"></button>
 
   <button mat-button [matMenuTriggerFor]="ropa">Ropa</button>
 
@@ -58,32 +60,68 @@
       [routerLink]="['/productos']"
       >Pantalones</a
     >
-    <a mat-menu-item [routerLink]="['/productos']">Blusas</a>
-    <a mat-menu-item [routerLink]="['/productos']">Vestidos</a>
+    <a (click)="scrollToTopBlusas()" mat-menu-item [routerLink]="['/productos']"
+      >Blusas</a
+    >
+    <a
+      (click)="scrollToTopVestidos()"
+      mat-menu-item
+      [routerLink]="['/productos']"
+      >Vestidos</a
+    >
     <a
       (click)="scrollToTopZapatos()"
       mat-menu-item
       [routerLink]="['/productos']"
       >Zapatos</a
     >
+    <a
+      (click)="scrollToTopComplementos()"
+      mat-menu-item
+      [routerLink]="['/productos']"
+      >Complementos</a
+    >
   </mat-menu>
 
   <mat-menu #ropahombre="matMenu">
-    <a mat-menu-item href="#">Chaquetas</a>
-    <a mat-menu-item href="#">Pantalones</a>
-    <a mat-menu-item href="#">Camisas</a>
-    <a mat-menu-item href="#">Trajes</a>
-    <a mat-menu-item href="#">Zapatos</a>
+    <a
+      (click)="scrollToTopChaquetas()"
+      mat-menu-item
+      [routerLink]="['/productos-hombres']"
+      >Chaquetas</a
+    >
+    <a
+      (click)="scrollToTopPantalonesH()"
+      mat-menu-item
+      [routerLink]="['/productos-hombres']"
+      >Pantalones</a
+    >
+    <a
+      (click)="scrollToTopZapatosH()"
+      mat-menu-item
+      [routerLink]="['/productos-hombres']"
+      >Zapatos</a
+    >
   </mat-menu>
 
   <button mat-button [matMenuTriggerFor]="informacion">Información</button>
 
   <mat-menu #informacion="matMenu">
-    <a mat-menu-item [routerLink]="['/sobre-nosotros']">¿Quienes Somos?</a>
-    <a mat-menu-item [routerLink]="['/contacto']">Contacto</a>
+    <a
+      (click)="scrollToTopChaquetas()"
+      mat-menu-item
+      [routerLink]="['/sobre-nosotros']"
+      >¿Quienes Somos?</a
+    >
+    <a
+      (click)="scrollToTopChaquetas()"
+      mat-menu-item
+      [routerLink]="['/contacto']"
+      >Contacto</a
+    >
   </mat-menu>
 
   <button mat-button>
-    <a [routerLink]="['/login']"> Login</a>
+    <a (click)="scrollToTopChaquetas()" [routerLink]="['/carrito']"> Carrito</a>
   </button>
 </div>

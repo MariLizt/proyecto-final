@@ -227,3 +227,8 @@ a.btn-contact {
   color: #000;
 }
 
+/*Banner*/
+
+.carousel-indicators [data-bs-target] {
+  background-color: #000;
+}

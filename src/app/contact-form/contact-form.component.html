@@ -1,11 +1,18 @@
+<div class="banner-contacto">
+  <h1><b>Contacto</b></h1>
+  <img
+    class="Banner-contacto-int"
+    src="../../assets/img/contacto/banner.jpg"
+    alt="Contacto"
+  />
+</div>
+
 <div class="wrapper-box" id="contact-form">
   <div class="container">
     <div class="row">
       <div class="col-md-6 offset-md-3">
         <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
           <div class="form-group">
-            <h2 class="text-center mb-5"><b>Contacto</b></h2>
-
             <label for="Email"><b>Correo</b></label>
             <input
               type="email"

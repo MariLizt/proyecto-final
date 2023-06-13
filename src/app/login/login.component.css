@@ -8,3 +8,8 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right,  rgb(190, 192, 194), rgb(69, 68, 71))
     }
+
+
+    .row.d-flex.justify-content-center.align-items-center.h-100 {
+        padding: 115px 0px 60px;
+    }

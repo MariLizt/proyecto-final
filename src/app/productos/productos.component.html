@@ -20,7 +20,10 @@
           </h2>
           <div class="col" *ngFor="let producto of grupo">
             <div class="card" id="producto-{{ producto.codigo }}">
-              <a [routerLink]="['/detalle', producto.codigo]">
+              <a
+                (click)="scrollToTop()"
+                [routerLink]="['/detalle', producto.codigo]"
+              >
                 <img
                   src="{{ producto.imagen }}"
                   class="card-img-top"

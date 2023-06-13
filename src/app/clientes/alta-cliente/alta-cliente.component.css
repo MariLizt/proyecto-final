@@ -1,0 +1,11 @@
+button.btn.btn-light {
+    padding: 0px 20px;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #000000;
+    border-color: #feffff;
+    font-weight: 600;
+    box-shadow: 4px 3px 5px white;
+}
